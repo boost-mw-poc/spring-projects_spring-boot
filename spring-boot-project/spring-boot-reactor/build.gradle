@@ -6,23 +6,17 @@ plugins {
 	id "org.springframework.boot.optional-dependencies"
 }
 
-description = "Spring Boot Transaction"
+description = "Spring Boot Reactor"
 
 dependencies {
 	api(project(":spring-boot-project:spring-boot"))
-	api("org.springframework:spring-tx")
+	api("io.projectreactor:reactor-core")
 	optional(project(":spring-boot-project:spring-boot-autoconfigure"))
-	optional("jakarta.transaction:jakarta.transaction-api")
-	optional("org.springframework:spring-aspects")
 }
 
 dependencies {
 	testImplementation(project(":spring-boot-project:spring-boot-test"))
 	testImplementation(project(":spring-boot-project:spring-boot-tools:spring-boot-test-support"))
-	testImplementation("com.github.h-thurow:simple-jndi")
-	testImplementation("com.zaxxer:HikariCP")
-	testImplementation("org.hsqldb:hsqldb")
-	testImplementation("org.springframework:spring-jdbc")
+	testImplementation("io.micrometer:context-propagation")
 	testRuntimeOnly("ch.qos.logback:logback-classic")
-	testRuntimeOnly(project(":spring-boot-project:spring-boot-reactor"))
 }

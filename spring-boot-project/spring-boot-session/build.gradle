@@ -18,6 +18,7 @@ dependencies {
 }
 
 dependencies {
+	testFixturesImplementation(project(":spring-boot-project:spring-boot-reactor"))
 	testFixturesImplementation(project(":spring-boot-project:spring-boot-test"))
 	testFixturesImplementation(project(":spring-boot-project:spring-boot-tools:spring-boot-test-support"))
 	testFixturesImplementation(testFixtures(project(":spring-boot-project:spring-boot")))

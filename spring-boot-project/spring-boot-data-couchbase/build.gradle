@@ -12,8 +12,8 @@ dependencies {
 	api(project(":spring-boot-project:spring-boot-couchbase"))
 	api("org.springframework.data:spring-data-couchbase")
 	optional(project(":spring-boot-project:spring-boot-autoconfigure"))
+	optional(project(":spring-boot-project:spring-boot-reactor"))
 	optional(project(":spring-boot-project:spring-boot-validation"))
-	optional("io.projectreactor:reactor-core")
 }
 
 dependencies {
