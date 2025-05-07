@@ -34,7 +34,7 @@ dependencies {
 }
 
 dependencies {
-	testImplementation(project(":spring-boot-project:spring-boot-http"))
+	testImplementation(project(":spring-boot-project:spring-boot-http-converter"))
 	testImplementation(project(":spring-boot-project:spring-boot-jackson"))
 	testImplementation(project(":spring-boot-project:spring-boot-jpa"))
 	testImplementation(project(":spring-boot-project:spring-boot-rsocket"))
