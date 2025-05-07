@@ -13,6 +13,7 @@ dependencies {
 	api(project(":spring-boot-project:spring-boot-session"))
 	api("org.springframework.session:spring-session-hazelcast")
 	implementation(project(":spring-boot-project:spring-boot-hazelcast"))
+	implementation(project(":spring-boot-project:spring-boot-web-server"))
 	optional(project(":spring-boot-project:spring-boot-autoconfigure"))
 }
 

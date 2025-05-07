@@ -16,6 +16,7 @@ dependencies {
 	implementation(project(":spring-boot-project:spring-boot-http-converter"))
 	optional(project(":spring-boot-project:spring-boot-autoconfigure"))
 	optional(project(":spring-boot-project:spring-boot-validation"))
+	optional(project(":spring-boot-project:spring-boot-web-server"))
 }
 
 dependencies {
