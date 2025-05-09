@@ -12,7 +12,9 @@ description = "Spring Boot Cassandra"
 dependencies {
 	api(project(":spring-boot-project:spring-boot"))
 	api("org.apache.cassandra:java-driver-core")
+	optional(project(":spring-boot-project:spring-boot-actuator"))
 	optional(project(":spring-boot-project:spring-boot-autoconfigure"))
+	optional("io.projectreactor:reactor-core")
 }
 
 dependencies {
@@ -23,5 +25,6 @@ dependencies {
 	dockerTestImplementation("org.testcontainers:junit-jupiter")
 	testImplementation(project(":spring-boot-project:spring-boot-test"))
 	testImplementation(project(":spring-boot-project:spring-boot-tools:spring-boot-test-support"))
+	testImplementation("io.projectreactor:reactor-test")
 	testRuntimeOnly("ch.qos.logback:logback-classic")
 }
