@@ -11,6 +11,8 @@ description = "Spring Boot Hazelcast"
 dependencies {
 	api(project(":spring-boot-project:spring-boot"))
 	api("com.hazelcast:hazelcast")
+	compileOnly("com.fasterxml.jackson.core:jackson-annotations")
+	optional(project(":spring-boot-project:spring-boot-actuator"))
 	optional(project(":spring-boot-project:spring-boot-autoconfigure"))
 	optional(project(":spring-boot-project:spring-boot-jpa"))
 	optional("com.hazelcast:hazelcast-spring")
@@ -18,6 +20,7 @@ dependencies {
 }
 
 dependencies {
+	testCompileOnly("com.fasterxml.jackson.core:jackson-annotations")
 	testImplementation(project(":spring-boot-project:spring-boot-test"))
 	testImplementation(project(":spring-boot-project:spring-boot-tools:spring-boot-test-support"))
 	testRuntimeOnly("com.h2database:h2")
