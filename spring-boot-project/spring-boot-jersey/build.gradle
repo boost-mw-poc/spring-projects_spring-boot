@@ -22,6 +22,7 @@ dependencies {
 }
 
 dependencies {
+	testImplementation(project(":spring-boot-project:spring-boot-restclient"))
 	testImplementation(project(":spring-boot-project:spring-boot-test"))
 	testImplementation(project(":spring-boot-project:spring-boot-tomcat"))
 	testImplementation(project(":spring-boot-project:spring-boot-tools:spring-boot-test-support"))
