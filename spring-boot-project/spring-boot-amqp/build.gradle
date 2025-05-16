@@ -14,7 +14,7 @@ dependencies {
 	api("org.springframework.amqp:spring-rabbit")
 	compileOnly("com.fasterxml.jackson.core:jackson-annotations")
 	implementation(project(":spring-boot-project:spring-boot-tx"))
-	optional(project(":spring-boot-project:spring-boot-actuator"))
+	optional(project(":spring-boot-project:spring-boot-actuator-autoconfigure"))
 	optional(project(":spring-boot-project:spring-boot-autoconfigure"))
 	optional("io.micrometer:micrometer-core")
 	optional("org.springframework.amqp:spring-rabbit-stream")
