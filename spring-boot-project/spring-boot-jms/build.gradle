@@ -14,7 +14,7 @@ dependencies {
 	api("jakarta.jms:jakarta.jms-api")
 	api("org.springframework:spring-jms")
 	compileOnly("com.fasterxml.jackson.core:jackson-annotations")
-	optional(project(":spring-boot-project:spring-boot-actuator"))
+	optional(project(":spring-boot-project:spring-boot-actuator-autoconfigure"))
 	optional(project(":spring-boot-project:spring-boot-autoconfigure"))
 	optional("jakarta.transaction:jakarta.transaction-api")
 	optional("org.messaginghub:pooled-jms") {
