@@ -13,7 +13,7 @@ dependencies {
 	api(project(":spring-boot-project:spring-boot"))
 	api("org.neo4j.driver:neo4j-java-driver")
 	compileOnly("com.fasterxml.jackson.core:jackson-annotations")
-	optional(project(":spring-boot-project:spring-boot-actuator"))
+	optional(project(":spring-boot-project:spring-boot-actuator-autoconfigure"))
 	optional(project(":spring-boot-project:spring-boot-autoconfigure"))
 }
 
