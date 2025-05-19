@@ -12,6 +12,7 @@ dependencies {
 	api(project(":spring-boot-project:spring-boot"))
 	api("org.springframework.kafka:spring-kafka")
 	optional(project(":spring-boot-project:spring-boot-autoconfigure"))
+	optional(project(":spring-boot-project:spring-boot-metrics"))
 	optional("org.apache.kafka:kafka-streams")
 }
 
