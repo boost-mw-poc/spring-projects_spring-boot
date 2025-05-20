@@ -17,6 +17,7 @@ dependencies {
 	implementation(project(":spring-boot-project:spring-boot-tx"))
 	optional(project(":spring-boot-project:spring-boot-actuator-autoconfigure"))
 	optional(project(":spring-boot-project:spring-boot-autoconfigure"))
+	optional(project(":spring-boot-project:spring-boot-docker-compose"))
 	optional(project(":spring-boot-project:spring-boot-testcontainers"))
 	optional("io.micrometer:micrometer-core")
 	optional("org.springframework.amqp:spring-rabbit-stream")
@@ -26,6 +27,7 @@ dependencies {
 
 dependencies {
 	dockerTestImplementation(project(":spring-boot-project:spring-boot-tools:spring-boot-test-support-docker"))
+	dockerTestImplementation(testFixtures(project(":spring-boot-project:spring-boot-docker-compose")))
 	dockerTestImplementation("ch.qos.logback:logback-classic")
 	dockerTestImplementation("org.testcontainers:junit-jupiter")
 	testCompileOnly("com.fasterxml.jackson.core:jackson-annotations")
