@@ -1673,6 +1673,10 @@ bom {
 	}
 	library("Netty", "4.2.7.Final") {
 		prohibit {
+			versionRange "[4.2.8.Final]"
+			because "it contains a regression https://github.com/netty/netty/issues/16020"
+		}
+		prohibit {
 			contains ".Alpha"
 			contains ".Beta"
 			contains ".RC"
@@ -2398,7 +2402,7 @@ bom {
 			releaseNotes("https://github.com/spring-projects/spring-batch/releases/tag/v{version}")
 		}
 	}
-	library("Spring Data Bom", "2025.1.1-SNAPSHOT") {
+	library("Spring Data Bom", "2025.1.1") {
 		considerSnapshots()
 		calendarName = "Spring Data Release"
 		group("org.springframework.data") {
